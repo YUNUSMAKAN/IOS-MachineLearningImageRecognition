@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import CoreML
+import Vision
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var resultLabel: UILabel!
     
-    
+    var chosenImage = CIImage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,10 +36,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         imageView.image = info[.originalImage] as? UIImage
         self.dismiss(animated: true, completion: nil)
         
+        if let ciImage = CIImage(image: imageView.image!) {
+            chosenImage = ciImage
+        }
+        
+        
+    //Bu recog.. fonksiyonun avantaji ve dezavantaji var.Avantaji kullanici resmi sectiktek sonra hemen islemi yapicak ve biriki saniye sonra sonucu gorucek.Dezavantaji bizde CI image yapisi beklicek.
+    //CIImage: Core image tarafindan kullanilabilecek bir gorseldir.
+        recognizeImage(image: chosenImage)
+        
         
         
     }
-    
+    //Kullanici resmi sectikten hemen sonra cagiricaz.
+    func recognizeImage(image : CIImage ){
+        
+    }
     
 }
 
