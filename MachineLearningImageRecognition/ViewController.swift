@@ -51,7 +51,42 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     //Kullanici resmi sectikten hemen sonra cagiricaz.
     func recognizeImage(image : CIImage ){
         
+        /*
+         2 sey olursturucaz gorsel tanima isleminde :
+         1) Request : istek olusturucaz
+         2) Handler : istegimizi ele alicagiz
+         */
+        
+        if let model = try? VNCoreMLModel(for: MobileNetV2().model) {
+            
+            //REQUEST
+            let request = VNCoreMLRequest(model: model) { (vnrequest, error) in
+                
+                if let results = vnrequest.results as? [VNClassificationObservation] {
+                    if results.count > 0 {
+                    
+                        let topResult = results.first //ilk secenegi bana getir dedik.
+                        DispatchQueue.main.async { //kullaniciya gosterme islemi icin dispatchQueue kullanilir.
+                            
+                            let confidenceLevel = (topResult?.confidence ?? 0) * 100
+                            
+                            self.resultLabel.text = "\(confidenceLevel)% it's \(topResult!.identifier)"
+                        }
+                        
+                        
+                    }
+                    
+                }
+                
+                
+            }
+            
+           
+            
+            
+            
     }
     
 }
 
+}
