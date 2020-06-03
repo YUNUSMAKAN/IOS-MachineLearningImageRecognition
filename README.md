@@ -9,17 +9,19 @@
 
 * CORE ML: Machine Learning Modellerini uygulamamız içerisinde olana saglayan bir Framework dır.
 
-* Projemizin içerisine CoreML Ve Vision ı import etmeliyizki gerekli sınıflara ulaşabilelim.
+* Projemizin içerisine CoreML Ve Vision ı import etmeliyizki gerekli sınıflara ulaşabilmemiz icin.
 
-* İki tane ana işlem yapmamız gerekmektedir.Birincisi REQUEST oluşturmak.Request i aşagıdaki gibi projemizin icindeki fonksiyonumuzun içine oluşturabilirizç
+* İki tane ana işlem yapmamız gerekmektedir.Birincisi REQUEST oluşturmak.Request i aşagıdaki gibi projemizin icindeki fonksiyonumuzun içine oluşturabiliriz.
 
 <img width="815" alt="Ekran Resmi 2020-06-03 12 47 02" src="https://user-images.githubusercontent.com/58694754/83625245-4e939f00-a59c-11ea-979f-81061a3b96ab.png">
 
-* Ikincisi oluşturduğumuz REQUEST i HANDLER ederek ele almamız gerekmektedır.Handler ı da aşagıdaki gibi fonksiyonumuzun icine yazabilirizç
+* Ikincisi oluşturduğumuz REQUEST i HANDLER ederek ele almamız gerekmektedır.Handler ı da aşagıdaki gibi fonksiyonumuzun icine yazabiliriz.
 
 <img width="556" alt="Ekran Resmi 2020-06-03 12 47 14" src="https://user-images.githubusercontent.com/58694754/83625249-4fc4cc00-a59c-11ea-8531-c63def46b751.png">
 
 # SCREENSHOT
+
+* Secilen görselin yüzde kaç oranla neye benzediğinin bilgisi yer almaktadırç
 
 <img width="432" alt="Ekran Resmi 2020-06-03 12 51 12" src="https://user-images.githubusercontent.com/58694754/83625253-50f5f900-a59c-11ea-81a9-55f342fda289.png">
 <img width="432" alt="Ekran Resmi 2020-06-03 12 51 26" src="https://user-images.githubusercontent.com/58694754/83625255-53585300-a59c-11ea-8ca3-939d937ae5ad.png">
