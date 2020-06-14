@@ -1,4 +1,4 @@
-# IOS-MachineLearningImageRecognition
+# iOS-MachineLearningImageRecognition
 # MACHINE LEARNING
 
 * Makine öğrenmesi son yılların en popüler konularından biridir.Apple da 2017 sonlarında bunu bir KİT haline geitirip geliştiricilerin kullanımına sunmaktadır.Bu App ım içinde machine learıng kullanarak görselleri tanıyabilen basit bir uygulama gösterilmektedir.
